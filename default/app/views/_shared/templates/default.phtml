@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv='Content-type' content='text/html; charset=<?php echo APP_CHARSET ?>' />
+  <title><?php echo $title_principal ?></title>
+  <?php Tag::css("css/bootstrap") ?>
+  <?php Tag::css('bienvenida') ?>
+  <?php Tag::css('style') ?>
+  <?php Tag::css('open-sans') ?>
+  <?php Tag::css('estilos') ?>
+  <?php echo Html::includeCss() ?>
+  <?php echo Tag::js("jquery/jquery.min") ?>
+  <?php echo Tag::js("js/bootstrap.min") ?>
+</head>
+<body>
+  <div id="principal" class="container">
+    <div class="primera_franja_izquierda pull-left">
+      <h2>Remates Judiciales de Bienes Raíces <span> - Subastas Bancarias - </span></h2>
+    </div>
+    <div class="primera_franja_derecha pull-right">
+      <div class="pull-right">
+        <div class="imagen_whatsap">
+          <?php echo Html::img("default/whatsap.png","Imagen Whatsapp","width='20'") ?>
+        </div>
+      </div>
+      <div class="pull-right">
+        <div class="numero pull-right">55.30.71.10.08</div>
+        <div class="clearfix"></div>
+        <div class="text pull-right">Solo Whatsap</div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+    <hr class="linea_separacion">
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid" style="padding-left:0px !important">
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav nav-tabs navbar-nav">
+            <li role="presentation"><a href="#">BIENVENIDOS</a></li>
+            <li role="presentation"><a href="#">QUIENES SOMOS</a></li>
+            <li role="presentation" class="dropdown multi-level">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                PROPIEDADES 
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="">item 1</a></li>
+                <li><a href="">item 1</a></li>
+                <li class="dropdown-submenu"><a href="">item 1</a>
+
+                  <ul class="dropdown-menu sub_menu_azul_clarito">
+                    <li><a tabindex="-1" href="#">Second level</a></li>
+                    <li><a href="#">Second level</a></li>
+                    <li><a href="#">Second level</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li role="presentation"><a href="#">CONTACTO</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">68.50.20.72</a></li>
+            <li><a href="#">·</a></li>
+            <li><a href="#">68.48.11.09</a></li>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group has-feedback">
+                <label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
+                <input type="text" class="form-control-remate" id="inputSuccess5" aria-describedby="inputSuccess5Status">
+                <h2><span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span></h2>
+                <span id="inputSuccess5Status" class="sr-only">(success)</span>
+              </div>
+              <!--<button type="submit" class="btn btn-default">Submit</button>-->
+            </form>
+          </ul>
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- CONTENIDO DINAMICO AQUI-->
+    <?php View::content() ?>
+    <!-- CONTENIDO DINAMICO AQUI-->
+  </div>
+</body>
+</html>
+
