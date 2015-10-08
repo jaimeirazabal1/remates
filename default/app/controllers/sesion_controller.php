@@ -18,15 +18,21 @@ class SesionController extends AppController{
         if (Input::hasPost("sesion")){
         	$u = new Sesion(Input::post("sesion"));
            	$u->password = md5($u->password);
-           	if ($u->save()) {
-           		Flash::valid("Usuario creado");
+           	$password = md5(Input::post("password2"));
+           	if ($u->password == $password) {
+	           	if ($u->save()) {
+	           		Flash::valid("Usuario creado");
+	           		Input::delete();
+	           	}else{
+	           		Flash::error("Error");
+	           	}
            	}else{
-           		Flash::error("Error");
+           		Flash::error("Las contraseñas deben coincidir");
            	}
         }			
 	}
 	public function dashboard(){
-		
+		$this->secciones = array("Quienes somos"=>"");
 	}
 }
 
