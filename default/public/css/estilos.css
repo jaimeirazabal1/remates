@@ -89,7 +89,38 @@ body {
 .sub_menu_azul_clarito{
 	background-color: #006680;
 }
+.form-principal{
+    width:300px;
+    border:1px solid black;
+    padding:10px;
+    position: absolute;
+    z-index: 1;
+    right:250px;
+    margin-top:20px;
+}
+::-webkit-input-placeholder {
+   color: #666666;
+   font-weight: bold;
+   font-size: 16px;
+}
 
+:-moz-placeholder { /* Firefox 18- */
+   color: #666666;
+   font-weight: bold;
+   font-size: 16px;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #666666;
+   font-weight: bold;
+   font-size: 16px;  
+}
+
+:-ms-input-placeholder {  
+   color: #666666;
+   font-weight: bold;
+   font-size: 16px;  
+}
 .form-control-remate{
     margin-top:5px;
     border:none;
@@ -97,10 +128,38 @@ body {
     background-color: #cccccc;
     padding:2px 2px 2px 10px;
 }
+.form-control-remate2{
+    width:100%;
+    margin-top:5px;
+    border:none;
+    border-radius: 10px;
+    background-color: #F4F4F4;
+    padding:2px 2px 2px 10px;
+    height:35px;
+}
+.form-control-remate-textarea{
+    margin-top:5px;
+    border:none;
+    border-radius: 10px;
+    background-color: #F4F4F4;
+    padding:2px 2px 2px 10px;
+    width:100%;
+}
 .form-control-remate:focus{
     border:none;
     border-radius: 10px;
     background-color: #cccccc;
     padding:2px 2px 2px 10px;
 }
+.boton-remate{
+    background-color: #1b77b2;
+    border-radius: 15px;
+    padding:5px;
+    border:none;
+}
 /*fin menu multi nivel boostra*/
+
+.form-centrado{
+    width: 50%;
+    margin:auto;
+}

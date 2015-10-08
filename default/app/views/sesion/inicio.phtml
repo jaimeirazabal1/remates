@@ -1,0 +1,16 @@
+<?php View::content() ?>
+<div class="form-centrado">
+	<center>
+		<h2>Inicio de sesión</h2>
+	</center>
+	<hr>
+	<?php echo Form::open() ?>
+	<div class="form-group">
+		<?php echo Form::text("user","class='form-control' placeholder='Nombre de Usuario'") ?>
+	</div>
+	<div class="form-group">
+		<?php echo Form::pass("password","class='form-control' placeholder='Contraseña'") ?>
+	</div>
+	<input type="submit" class="btn btn-default" value="Ingresar">
+	<?php echo Form::close() ?>
+</div>
